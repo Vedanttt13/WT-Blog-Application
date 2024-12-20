@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 app.use(express.json({limit: "10mb"}));
 app.use(cors({
   origin: ['https://wt-blog-drab.vercel.app'],
-  methods: ["POST","GET"]
+  methods: ["POST","GET"],
   credentials: true,
 }));
 app.use(cookieParser());
